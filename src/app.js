@@ -18,7 +18,7 @@ app.use(morgan("tiny"));
 
 // healthcheck endpoint
 app.get("/", (req, res) => {
-  res.status(200).send({ status: "ok" });
+  res.status(200).send({ status: "ok!" });
 });
 
 app.use("/hello", helloRoute);
